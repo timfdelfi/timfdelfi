@@ -1,16 +1,15 @@
-## Hi there 👋
+# Привет, я Тимофей 👋
 
-<!--
-**timfdelfi/timfdelfi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Делаю VPN-решения для роутеров на OpenWrt.
 
-Here are some ideas to get you started:
+## 🔧 Проекты
+- [luci-vless-selective](https://github.com/timfdelfi/luci-vless-selective): VPN-приложение для OpenWrt в стиле Happ: вставил VLESS-ссылку, нажал «Подключиться», и всё работает.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🛠 Стек
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![OpenWrt](https://img.shields.io/badge/-OpenWrt-00B5E2?logo=openwrt&logoColor=white)
+![Lua](https://img.shields.io/badge/-LuCI-2C2D72)
+![sing-box](https://img.shields.io/badge/-sing--box-black)
+
+## 📫 Связь
+Telegram: @timfiiiii
