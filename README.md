@@ -1,68 +1,40 @@
-<div align="center">
+<h1 align="left">Привет, я Тимофей 👋</h1>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,14,18&height=200&section=header&text=Timofei&fontSize=60&fontColor=ffffff&animation=fadeIn&desc=Linux%20%7C%20OpenWrt%20%7C%20Networking&descSize=20&descAlignY=72" alt="banner" width="100%"/>
+<p align="left">
+  Разрабатываю системный софт и сетевые инструменты под <b>Linux</b> и роутеры (<b>OpenWrt</b>).<br/>
+  Люблю, когда всё работает быстро, без лишних зависимостей и стабильно на слабом железе.
+</p>
 
-<br/>
-
-<a href="https://t.me/timfiiiii"><img src="https://img.shields.io/badge/TELEGRAM-26A5E4?style=flat&logo=telegram&logoColor=white" alt="Telegram"/></a>
-<a href="mailto:timfiiiii7535@gmail.com"><img src="https://img.shields.io/badge/EMAIL-D14836?style=flat&logo=gmail&logoColor=white" alt="Email"/></a>
-<a href="https://github.com/timfdelfi"><img src="https://img.shields.io/badge/GITHUB-181717?style=flat&logo=github&logoColor=white" alt="GitHub"/></a>
-
-</div>
-
----
-
-### 🛠️ Обо мне / About Me
-
-Разрабатываю системные и сетевые решения для **Linux** и встраиваемых платформ (**OpenWrt**). Уделяю внимание чистой архитектуре, надежности и стабильной работе в условиях жестких ограничений ресурсов (RAM / Flash).
-
-- 🌐 **Специализация:** Linux Networking (PBR / routing tables, nftables / iptables, TUN, DNS DoT/DoH, nftset).
-- ⚙️ **Платформы и инструменты:** OpenWrt (LuCI JS, procd, ubus), POSIX sh / BusyBox ash, jq, sing-box.
-- 🧪 **Инженерия и качество:** CI/CD пайплайны, ShellCheck, e2e UI-тестирование на Playwright.
-- 📍 **Локация:** Шерегеш, Россия.
-- 💬 **Связь:** Telegram: [@timfiiiii](https://t.me/timfiiiii)
+<p align="left">
+  <a href="https://t.me/timfiiiii"><img src="https://img.shields.io/badge/Telegram-26A5E4?style=flat-square&logo=telegram&logoColor=white" alt="Telegram"/></a>
+  <a href="mailto:timfiiiii7535@gmail.com"><img src="https://img.shields.io/badge/Email-timfiiiii7535%40gmail.com-ea4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
+  <img src="https://img.shields.io/badge/Шерегеш%2C%20Россия-6c5ce7?style=flat-square" alt="Location"/>
+</p>
 
 ---
 
-### 💻 Технологический стек / Tech Stack
+### 🛠 Чем занимаюсь
 
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=linux,bash,js,git,githubactions&perline=8" alt="skills"/>
-
-</div>
+- **Сетевой стек Linux:** Policy Routing (`ip rule`, маршрутизация по таблицам), `nftables`, TUN-интерфейсы, селективный роутинг и обход DPI/блокировок.
+- **OpenWrt & Embedded:** разработка LuCI JS-интерфейсов, системные демоны (`procd`, `ubus`), скрипты на POSIX `sh` / BusyBox `ash`, обработка данных на чистом `jq` без внешних рантаймов.
+- **Надёжность и CI/CD:** автоматическое тестирование (`shellcheck`, `sh -n`, валидация конфигов) и e2e UI-тестирование на Playwright.
 
 ---
 
-### 📌 Основные проекты / Featured Projects
+### 🚀 Проект: [luci-vless-selective](https://github.com/timfdelfi/luci-vless-selective)
 
-#### [luci-vless-selective](https://github.com/timfdelfi/luci-vless-selective)
-> **Полнофункциональный VPN-клиент и менеджер маршрутизации для OpenWrt (LuCI + sing-box + zapret)**
-- ⚡ **Zero-dependency бэкенд:** модульная архитектура на POSIX sh и чистом `jq` (без внешних зависимостей и регулярных выражений Oniguruma для совместимости с роутерами).
-- 🛡️ **Сетевой стек:** Policy-Based Routing (таблица 100), изоляция правил через `rule.prefs`, выборочная маршрутизация доменов через `dnsmasq-full` + `nftset`, защита от утечек IPv6.
-- 🎮 **Bypass для Discord:** автоматический подбор стратегий `nfqws` (zapret) с бесшовным резервным переключением на VPN при сбое.
-- 🖥️ **Интерфейс:** современный клиентский LuCI JS View с живым спидометром, темной темой и мобильной адаптацией.
-- 🧪 **Тесты и CI/CD:** автоматизированная проверка конфигурации sing-box, linting (shellcheck, sh -n) и e2e тесты интерфейса через headless Chromium (Playwright).
+VPN-клиент для OpenWrt (LuCI + sing-box + zapret) по принципу **«вставил ссылку → нажал кнопку → работает»**.
 
----
-
-### 📈 Активность и статистика / Contribution & Activity
-
-<div align="center">
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=timfdelfi&theme=tokyonight&hide_border=true&stroke=FF2D78&ring=FF2D78&fire=FF2D78&currStreakLabel=FF2D78" alt="streak"/>
-
-<br/>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=timfdelfi&layout=compact&theme=tokyonight&hide_border=true" alt="top languages"/>
-
-</div>
+- **Zero-dependency бэкенд:** модульный код на чистом `sh` и `jq` без внешних библиотек и регулярок (заводится на любом роутере с урезанным BusyBox).
+- **Умная маршрутизация:** выборочный обход по доменам через `dnsmasq-full` + `nftset`, автовыбор быстрого сервера и изоляция собственных сетевых правил.
+- **Discord через zapret:** обход блокировок через `nfqws` с автоподбором рабочих стратегий и бесшовным переключением на VPN при сбое.
+- **Интерфейс:** современный LuCI JS View с живым спидометром скорости, сессионным счётчиком трафика и тёмной темой.
+- **Инженерия:** чистый shellcheck, синтаксические тесты и UI-тесты на Playwright в headless Chromium.
 
 ---
 
-<div align="center">
+### 💻 Стек
 
-<sub>Посещений профиля:</sub>
-<img src="https://komarev.com/ghpvc/?username=timfdelfi&label=Profile%20views&color=ff2d78&style=flat" alt="views"/>
-
-</div>
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=linux,bash,js,git,githubactions&theme=dark" alt="Стек" />
+</p>
